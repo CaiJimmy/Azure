@@ -8,16 +8,7 @@
         ), '', ''); ?></h1>
         <?php if ($this->have()): ?>
             <?php while($this->next()): ?>
-                <article class="post" id="<?php $this->cid() ?>">
-                    <?php if (isset($this->fields->Status)): ?>
-                    <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
-                        <div class="post-description">
-                            <blockquote>
-                                 <?php $this->excerpt(250, '......');?>
-                            </blockquote>
-                        </div>
-                    </a>
-                    <?php else: ?>
+                <article class="post">
                     <header class="post-header">
                         <a href="<?php $this->permalink() ?>" class="post-title">
                             <?php $this->title() ?>
@@ -32,7 +23,6 @@
                             <?php $this->content(); ?>
                         </p>
                     </div>
-                     <?php endif; ?>
                 </article>
                 <hr>
                 <?php endwhile; ?>
@@ -43,7 +33,7 @@
                             </h1>
                         </article>
                         <?php endif; ?>
-                                <div class="page-nav">
+                                <div class="footer">
                                 <?php $this->pageNav('上一页','下一页',10,'...');?>
                                </div>
                                 <?php $this->need('footer.php'); ?>
