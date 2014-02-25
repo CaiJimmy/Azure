@@ -14,8 +14,12 @@
                     <?php $this->title() ?>
                 </a>
                 <p class="post-meta">
-                    <?php $this->date(); ?> | 分类：
+                    <span class="date">
+                        <?php $this->date(); ?>
+                    </span>
+                    <span class="category">
                         <?php $this->category(); ?>
+                    </span>
                 </p>
             </header>
             <div class="post-description">
