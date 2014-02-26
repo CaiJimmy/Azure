@@ -28,7 +28,6 @@
                 </p>
             </div>
             <div class="tags">
-                标签：
                 <?php $this->tags(' , ', true, '无'); ?>
             </div>
         </article>

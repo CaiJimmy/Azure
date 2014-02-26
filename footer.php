@@ -1,4 +1,4 @@
-<footer id="footer">
+<blockquote>
     &copy;
     <?php echo date( 'Y'); ?>
         <a href="<?php $this->options->siteUrl(); ?>">
@@ -12,8 +12,7 @@
         <a href="http://jimmycai.org">
             Jimmy
         </a>
-</footer>
-<!-- end #footer -->
+</blockquote>
 </div>
 <?php $this->footer(); ?>
 </body>

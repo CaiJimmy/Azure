@@ -3,7 +3,7 @@
             <?php if ($comments->have()): ?>
             <h4><?php $this->commentsNum(_t('快抢沙发'), _t('沙发被抢'), _t('已有 %d 条评论')); ?></h4>
                    
-            <div style="float: right;" id="comments-nav"><?php $comments->pageNav(); ?></div>
+            <?php $comments->pageNav(); ?>
 
             <?php $comments->listComments(); ?>
 
