@@ -4,13 +4,13 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.1
+ * @version 1.2
  * @link http://jimmycai.org
  */
  
  $this->need('header.php');
  ?>    
-        <div class="content pure-u-1 pure-u-med-3-4">
+        <div class="content grid-u-1 grid-u-med-3-4">
             <div class="posts">
                 <h1 class="content-subhead">
                     <a href="<?php $this->options->siteUrl(); ?>">

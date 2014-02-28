@@ -19,8 +19,8 @@
     <?php $this->header("generator=&template="); ?>
   </head>
 <body>
-<div id="layout" class="pure-g">
-    <div class="sidebar pure-u-1 pure-u-med-1-4">
+<div id="layout" class="grid-g">
+    <div class="sidebar grid-u-1 grid-u-med-1-4">
         <div class="header">
             <hgroup>
                 <a href="<?php $this->options->siteUrl(); ?>">
@@ -45,7 +45,7 @@
                 </ul>
             </nav>
         </div>
-<form class="pure-form" id="search">
-                    <input type="text" class="pure-input-rounded" name="s" id="s" required="true" placeholder="搜索....">
+<form class="form" id="search">
+                    <input type="text" class="input-rounded" name="s" id="s" required="true" placeholder="搜索....">
                 </form>
     </div>
