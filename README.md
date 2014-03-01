@@ -11,4 +11,4 @@ Azure
 
 更多介绍请查看<a href="http://jimmycai.org/Azure.html">发布页面</a>
 
-P.S：主题以<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution 3.0 License</a></p>发布
+P.S：主题以<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution 3.0 License</a>发布
