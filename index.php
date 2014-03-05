@@ -4,7 +4,7 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.2
+ * @version 1.2.5
  * @link http://jimmycai.org
  */
  
