@@ -7,20 +7,15 @@
             &raquo;
             <?php $this->category(); ?> &raquo;
                 <?php $this->title() ?>
+                    <span class="date">
+                        <?php $this->date(); ?>
+                    </span> 
         </h1>
-        <article class="post" id="post">
+        <article class="post" id="<?php $this->cid() ?>">
             <header class="post-header">
                 <a href="<?php $this->permalink() ?>" class="post-title">
                     <?php $this->title() ?>
                 </a>
-                <p class="post-meta">
-                    <span class="date">
-                        <?php $this->date(); ?>
-                    </span>
-                    <span class="category">
-                        <?php $this->category(); ?>
-                    </span>
-                </p>
             </header>
             <div class="post-description">
                 <p>
@@ -28,7 +23,7 @@
                 </p>
             </div>
             <div class="tags">
-                <?php $this->tags(' , ', true, '无'); ?>
+                <?php $this->tags('&nbsp;', true, '无'); ?>
             </div>
         </article>
         <ul class="pager">

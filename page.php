@@ -14,7 +14,7 @@
                     <?php $this->title() ?>
                 </a>
             </header>
-            <div class="post-description">
+            <div class="post-content">
                 <p>
                     <?php $this->content(); ?>
                 </p>

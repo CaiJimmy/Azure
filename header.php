@@ -19,16 +19,16 @@
     <?php $this->header("generator=&template="); ?>
   </head>
 <body>
-<div id="layout" class="grid-g">
+<div class="grid-g">
     <div class="sidebar grid-u-1 grid-u-med-1-4">
         <div class="header">
             <hgroup>
                 <a href="<?php $this->options->siteUrl(); ?>">
-                    <h1 class="brand-title">
+                    <h1 class="title">
                         <?php $this->options->title(); ?>
                     </h1>
                 </a>
-                <h2 class="brand-tagline">
+                <h2 class="description">
                     <?php $this->options->description(); ?>
                 </h2>
             </hgroup>
@@ -44,8 +44,8 @@
                             <?php endwhile; ?>
                 </ul>
             </nav>
+            <form class="form" id="search">
+                <input type="text" class="input" name="s" id="s" required="true" placeholder="搜索....">
+            </form>
         </div>
-<form class="form" id="search">
-                    <input type="text" class="input-rounded" name="s" id="s" required="true" placeholder="搜索....">
-                </form>
     </div>

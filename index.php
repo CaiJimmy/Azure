@@ -4,7 +4,7 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.2.5
+ * @version 1.3
  * @link http://jimmycai.org
  */
  
@@ -22,7 +22,7 @@
                     <article class="post" id="<?php $this->cid() ?>">
                         <?php if (isset($this->fields->Status)): ?>
                             <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
-                                <div class="post-description">
+                                <div class="post-content">
                                     <blockquote>
                                         <?php $this->excerpt(250, '......');?>
                                     </blockquote>
@@ -37,9 +37,6 @@
                                         <span class="date">
                                             <?php $this->date(); ?>
                                         </span>
-                                        <span class="category">
-                                            <?php $this->category(); ?>
-                                        </span>
                                         <span class="commentsnum">
                                             <a href="<?php $this->permalink() ?>#comments">
                                                 <?php $this->commentsNum('快抢沙发', '沙发被抢', '%d 条评论'); ?>
@@ -47,7 +44,7 @@
                                         </span>
                                     </p>
                                 </header>
-                                <div class="post-description">
+                                <div class="post-content">
                                     <p>
                                         <?php $this->content(); ?>
                                     </p>
