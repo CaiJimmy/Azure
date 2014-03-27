@@ -12,9 +12,11 @@
             <article class="post" id="<?php $this->cid() ?>">
                 <?php if (isset($this->fields->Status)): ?>
                     <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
-                                <blockquote>
-                                    <?php $this->content(); ?>
-                                </blockquote>
+                                <div class="post-content">
+                                    <blockquote>
+                                        <?php $this->excerpt(250, '......');?>
+                                    </blockquote>
+                                </div>
                     </a>
                         <?php else: ?>
                             <header class="post-header">
@@ -32,7 +34,7 @@
                                     <?php $this->title() ?>
                                 </a>
                             </header>
-                            <div class="post-description">
+                            <div class="post-content">
                                 <p>
                                     <?php $this->content(); ?>
                                 </p>

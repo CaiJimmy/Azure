@@ -1,6 +1,6 @@
-Azure
+﻿Azure
 =========
-<img src="https://mxvmaw.blu.livefilestore.com/y2pjlFiktm8Tn7vN8T8oUz6g7CdF7ti8sMwNnUucapW95TtHyguew3sTypo6WAXw-i4bxRFcAwfVPPN_5VCKq9gukUwuYCp8W9tWYal4l2zXSw/Azure.png">
+<img src="https://mxvmaw.blu.livefilestore.com/y2pNjVi7TMoK3rxCUsTS472F1gdyzGg8JBa-u8TZwZquBAk7mMvI5pArHw9J1i9y1JwWPDnQQMUuMzvlxUD-RbxpZKeqccLAPXLT1Ll9bn2puE/Azure.png">
 一个蔚蓝简洁的Typecho主题
 
 特点：
