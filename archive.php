@@ -1,6 +1,6 @@
 <?php $this->need('header.php'); ?>
     <div class="content grid-u-1 grid-u-med-3-4">
-        <h1 class="content-subhead"><?php $this->archiveTitle(array(
+        <h1 class="breadcrumbs" itemprop="breadcrumb"><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),

@@ -1,16 +1,15 @@
 <?php $this->need('header.php'); ?>
     <div class="content grid-u-1 grid-u-med-3-4">
-        <h1 class="content-subhead">
+        <h1 class="breadcrumbs" itemprop="breadcrumb">
             <a href="<?php $this->options->siteUrl(); ?>">
                 主页
             </a>
-            &raquo;
-            <?php $this->title() ?>
+             > 
+           <?php $this->title() ?>
         </h1>
         <article class="post" id="post">
             <header class="post-header">
-                <a href="<?php
-                $this->permalink() ?>" class="post-title">
+                <a href="<?php $this->permalink() ?>" class="post-title">
                     <?php $this->title() ?>
                 </a>
             </header>

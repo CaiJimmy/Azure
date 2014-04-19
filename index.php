@@ -4,7 +4,7 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.3
+ * @version 1.5
  * @link http://jimmycai.org
  */
  
@@ -12,12 +12,6 @@
  ?>    
         <div class="content grid-u-1 grid-u-med-3-4">
             <div class="posts">
-                <h1 class="content-subhead">
-                    <a href="<?php $this->options->siteUrl(); ?>">
-                        主页
-                    </a>
-                    &raquo; 最新文章
-                </h1>
                 <?php while($this->next()): ?>
                     <article class="post" id="<?php $this->cid() ?>">
                         <?php if (isset($this->fields->Status)): ?>

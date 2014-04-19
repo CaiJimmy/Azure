@@ -1,10 +1,10 @@
 <?php $this->need('header.php'); ?>
     <div class="content grid-u-1 grid-u-med-3-4">
-        <h1 class="content-subhead">
+        <h1 class="breadcrumbs" itemprop="breadcrumb">
             <a href="<?php $this->options->siteUrl(); ?>">
                 主页
             </a>
-            &raquo; 404 - 打开的网址不存在
+             > 404 - 打开的网址不存在
         </h1>
         <h2 class="text-center">
             404 - 打开的网址不存在
