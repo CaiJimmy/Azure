@@ -1,4 +1,4 @@
-﻿﻿<?php
+﻿<?php
 /**
  * 蔚蓝简洁的Typecho主题
  * 
@@ -18,7 +18,7 @@
                             <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
                                 <div class="post-content">
                                     <blockquote>
-                                        <?php $this->excerpt(250, _('......'));?>
+                                        <?php $this->excerpt(250, '......');?>
                                     </blockquote>
                                 </div>
                             </a>
@@ -33,7 +33,7 @@
                                         </span>
                                         <span class="commentsnum">
                                             <a href="<?php $this->permalink() ?>#comments">
-                                                <?php $this->commentsNum(_('No Comment'),_('1 Comment'), _('%d Comments')); ?>
+                                                <?php $this->commentsNum('快抢沙发', '沙发被抢', '%d 条评论'); ?>
                                             </a>
                                         </span>
                                     </p>
@@ -49,7 +49,7 @@
                     <?php endwhile; ?>
             </div>
             <div class="page-nav">
-                <?php $this->pageNav(_('Previous'),_('Next'),10,_('...'));?>
+                <?php $this->pageNav('上一页','下一页',10,'...');?>
             </div>
             <?php $this->need('footer.php'); ?>
         </div>

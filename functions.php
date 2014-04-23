@@ -20,7 +20,7 @@ function theNext($widget, $default = NULL)
  
     if ($content) {
         $content = $widget->filter($content);
-        $link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">'._('Next').' &rarr;</a>';
+        $link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">下一篇文章 &rarr;</a>';
         echo $link;
     } else {
         echo $default;
@@ -48,9 +48,10 @@ function thePrev($widget, $default = NULL)
  
     if ($content) {
         $content = $widget->filter($content);
-        $link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">&larr; '._('Previous').'</a>';
+        $link = '<a href="' . $content['permalink'] . '" title="' . $content['title'] . '">&larr; 上一篇文章</a>';
         echo $link;
     } else {
         echo $default;
     }
 }
+?>

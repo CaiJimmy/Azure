@@ -1,7 +1,12 @@
 <?php $this->need('header.php'); ?>
     <div class="content grid-u-1 grid-u-med-3-4">
         <h1 class="breadcrumbs" itemprop="breadcrumb">
-            <a href="<?php $this->options->siteUrl(); ?>"><?php _e('Home'); ?></a>&nbsp;&gt;&nbsp;<?php $this->category(); ?>&nbsp;&gt;&nbsp; <?php $this->title() ?>
+            <a href="<?php $this->options->siteUrl(); ?>">
+                主页
+            </a>
+             > 
+            <?php $this->category(); ?>  > 
+                <?php $this->title() ?>
                     <span class="date">
                         <?php $this->date(); ?>
                     </span> 
@@ -18,7 +23,7 @@
                 </p>
             </div>
             <div class="tags">
-                <?php $this->tags('&nbsp;', true, 'none'); ?>
+                <?php $this->tags('&nbsp;', true, '无'); ?>
             </div>
         </article>
         <ul class="pager">
