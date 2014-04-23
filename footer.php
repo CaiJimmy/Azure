@@ -4,11 +4,10 @@
         <a href="<?php $this->options->siteUrl(); ?>">
             <?php $this->options->title(); ?>
         </a>
-        . 由
+        . Power by
         <a href="http://www.typecho.org">
             Typecho
-        </a>
-        强力驱动 | Theme By
+        </a> | Theme By
         <a href="http://jimmycai.org">
             Jimmy
         </a>
