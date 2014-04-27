@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * 显示下一篇
  * 
@@ -64,7 +64,7 @@ function themeConfig($form) {
     _t('主题样式表CDN加速'));
     $form->addInput($CDNSetting);
 
-    $CDNUrl = new Typecho_Widget_Helper_Form_Element_Text('CDNUrl', NULL, 'http://cdn.jimmycai.org/Azure/style.css', _t('请输入您的样式表CDN地址（<a href="http://jimmycai.org/CDN.html">关于默认的CDN地址</a>）'));
+    $CDNUrl = new Typecho_Widget_Helper_Form_Element_Text('CDNUrl', NULL, 'http://cdn.jimmycai.org/Azure/style.css', _t('请输入您的样式表CDN地址（<a href="http://jimmycai.org/Azure.html#CDN">关于默认的CDN地址</a>）'));
     $form->addInput($CDNUrl);
 }
 ?>
