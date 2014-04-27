@@ -61,4 +61,3 @@
              <a target="_blank" href="/" class="blue">请到index.php修改友情链接</a><a target="_blank" href="/" class="grey">灰色方块</a><a target="_blank" href="/" class="dark-blue">深蓝色方块</a>
             </div>
             <?php $this->need('footer.php'); ?>
-        </div>
