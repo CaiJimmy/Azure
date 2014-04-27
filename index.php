@@ -4,13 +4,18 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.5
+ * @version 1.5.5
  * @link http://jimmycai.org
  */
  
  $this->need('header.php');
  ?>    
         <div class="content grid-u-1 grid-u-med-3-4">
+        <!--[if lt IE 10]> 
+        <div class="alert danger">
+         当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="/go.html?url=http://browsehappy.com/">升级你的浏览器</a>.
+        </div>
+        <![endif]-->
             <div class="posts">
                 <?php while($this->next()): ?>
                     <article class="post" id="<?php $this->cid() ?>">
@@ -50,6 +55,10 @@
             </div>
             <div class="page-nav">
                 <?php $this->pageNav('上一页','下一页',10,'...');?>
+            </div>
+            <h1 class="subhead">友情链接</h1>
+            <div class="well">
+             <a target="_blank" href="/" class="blue">请到index.php修改友情链接</a><a target="_blank" href="/" class="grey">灰色方块</a><a target="_blank" href="/" class="dark-blue">深蓝色方块</a>
             </div>
             <?php $this->need('footer.php'); ?>
         </div>

@@ -9,7 +9,12 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' | '); ?><?php $this->options->title(); ?></title>
+    <?php if ($this->options->CDN == 'on') { ?>
+    <link rel="stylesheet" href="<?php $this->options->CDNUrl() ?>">
+   <?php } ?>  
+    <?php if ($this->options->CDN == 'off') { ?>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
+    <?php } ?>  
     <?php if ($this->is('post')): ?>
     <link rel="canonical" href="<?php $this->permalink() ?>" />
     <?php endif; ?>

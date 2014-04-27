@@ -54,4 +54,17 @@ function thePrev($widget, $default = NULL)
         echo $default;
     }
 }
+function themeConfig($form) {
+ $CDNSetting = new Typecho_Widget_Helper_Form_Element_Radio('CDN', 
+    array(
+        'on' => _t('开启'),  
+        'off' => _t('关闭')
+        ), 
+    'on', 
+    _t('主题样式表CDN加速'));
+    $form->addInput($CDNSetting);
+
+    $CDNUrl = new Typecho_Widget_Helper_Form_Element_Text('CDNUrl', NULL, 'http://cdn.jimmycai.org/Azure/style.css', _t('请输入您的样式表CDN地址（<a href="http://jimmycai.org/CDN.html">关于默认的CDN地址</a>）'));
+    $form->addInput($CDNUrl);
+}
 ?>
