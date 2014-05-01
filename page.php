@@ -2,7 +2,7 @@
     <div class="content grid-u-1 grid-u-med-3-4">
         <h1 class="breadcrumbs" itemprop="breadcrumb">
             <a href="<?php $this->options->siteUrl(); ?>">
-                主页
+                首页
             </a>
              > 
            <?php $this->title() ?>

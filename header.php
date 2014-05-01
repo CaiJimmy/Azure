@@ -11,8 +11,7 @@
         ), '', ' | '); ?><?php $this->options->title(); ?></title>
     <?php if ($this->options->CDN == 'on') { ?>
     <link rel="stylesheet" href="<?php $this->options->CDNUrl() ?>">
-   <?php } ?>  
-    <?php if ($this->options->CDN == 'off') { ?>
+    <?php } else { ?>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.min.css'); ?>">
     <?php } ?>  
     <?php if ($this->is('post')): ?>

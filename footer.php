@@ -5,11 +5,11 @@
             <?php $this->options->title(); ?>
         </a>
         . 由
-        <a href="http://www.typecho.org">
+        <a href="http://www.typecho.org" target="_blank">
             Typecho
         </a>
         强力驱动 | Theme By
-        <a href="http://jimmycai.org">
+        <a href="http://jimmycai.org" target="_blank">
             Jimmy
         </a>
 </blockquote>

@@ -4,7 +4,7 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.5.5
+ * @version 1.6
  * @link http://jimmycai.org
  */
  
@@ -22,9 +22,9 @@
                         <?php if (isset($this->fields->Status)): ?>
                             <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
                                 <div class="post-content">
-                                    <blockquote>
+                                    <div class="well">
                                         <?php $this->excerpt(250, '......');?>
-                                    </blockquote>
+                                    </div>
                                 </div>
                             </a>
                             <?php else: ?>
@@ -44,9 +44,7 @@
                                     </p>
                                 </header>
                                 <div class="post-content">
-                                    <p>
                                         <?php $this->content(); ?>
-                                    </p>
                                 </div>
                                 <?php endif; ?>
                     </article>
@@ -56,8 +54,22 @@
             <div class="page-nav">
                 <?php $this->pageNav('上一页','下一页',10,'...');?>
             </div>
-            <h1 class="subhead">友情链接</h1>
-            <div class="well">
-             <a target="_blank" href="/" class="blue">请到index.php修改友情链接</a><a target="_blank" href="/" class="grey">灰色方块</a><a target="_blank" href="/" class="dark-blue">深蓝色方块</a>
-            </div>
+        <h1 class="subhead">
+            友情链接
+        </h1>
+        <div class="links">
+            <ul>
+                <li>
+                    <a target="_blank" href="#">
+                        请到index.php修改友情链接
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="#">
+                        友情链接样式由@山炮不二提供
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
             <?php $this->need('footer.php'); ?>

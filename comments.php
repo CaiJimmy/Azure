@@ -19,7 +19,7 @@
 			<h4 id="comments" class="subhead"><?php _e('添加新评论'); ?> &raquo;</h4>
 			<form method="post" action="<?php $this->commentUrl() ?>" id="comment_form" class="form">
                 <?php if($this->user->hasLogin()): ?>
-				<p>登陆为 <a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
+				<p>登录为 <a href="<?php $this->options->profileUrl(); ?>"><?php $this->user->screenName(); ?></a>. <a href="<?php $this->options->logoutUrl(); ?>" title="Logout"><?php _e('退出'); ?> &raquo;</a></p>
                 <?php else: ?>
                   <input type="text" name="author" id="author" placeholder="称呼" value="<?php $this->remember('author'); ?>" />
                   <input type="text" name="mail" id="mail" placeholder="电子邮件" value="<?php $this->remember('mail'); ?>" />
@@ -30,6 +30,6 @@
 			</form>
             </div>
             <?php else: ?>
-           <?php _e('该文章的评论已关闭'); ?>
+           <?php _e('<div class="alert info">该文章的评论已关闭</div>'); ?>
             <?php endif; ?>
 		</div>

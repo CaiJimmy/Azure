@@ -13,9 +13,9 @@
                 <?php if (isset($this->fields->Status)): ?>
                     <a href="<?php $this->permalink() ?>" title="<?php $this->date(); ?>">
                                 <div class="post-content">
-                                    <blockquote>
+                                    <div class="well">
                                         <?php $this->excerpt(250, '......');?>
-                                    </blockquote>
+                                    </div>
                                 </div>
                     </a>
                         <?php else: ?>
@@ -35,9 +35,7 @@
                                 </a>
                             </header>
                             <div class="post-content">
-                                <p>
                                     <?php $this->content(); ?>
-                                </p>
                             </div>
                             <?php endif; ?>
             </article>
@@ -46,9 +44,9 @@
             <?php endwhile; ?>
                     <?php else: ?>
                         <article class="post">
-                            <h1 class="content-subhead">
-                                <?php _e( '没有找到内容'); ?>
-                            </h1>
+                         <div class="alert info">
+                                <?php _e( '没有找到相关内容'); ?>
+                         </div>
                         </article>
                         <?php endif; ?>
                             <div class="page-nav">
