@@ -14,6 +14,10 @@
         </a>
 </blockquote>
 </div>
+<?php if ($this->options->InstantClick == 'on') { ?>
+<script src="<?php $this->options->themeUrl('instantclick.min.js'); ?>" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<?php } ?> 
 <?php $this->footer(); ?>
 </body>
 </html>

@@ -54,4 +54,22 @@ function thePrev($widget, $default = NULL)
         echo $default;
     }
 }
+function themeConfig($form) {
+ $TextDisplay = new Typecho_Widget_Helper_Form_Element_Radio('TextDisplay', 
+    array(
+        'text' => _t('纯文本'),  
+        'content' => _t('带HTML标签')
+        ), 
+    'text', 
+    _t('文章输出方式'));
+    $form->addInput($TextDisplay);
+ $InstantClick = new Typecho_Widget_Helper_Form_Element_Radio('InstantClick', 
+    array(
+        'on' => _t('开启'),  
+        'off' => _t('关闭')
+        ), 
+    'off', 
+    _t('无刷新加载功能（<a href="http://jimmycai.org/InstantClick.html" target="_blank">InstantClick</a>）'));
+    $form->addInput($InstantClick);
+}
 ?>

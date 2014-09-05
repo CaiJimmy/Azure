@@ -35,7 +35,11 @@
                                 </a>
                             </header>
                             <div class="post-content">
-                                    <?php $this->content(); ?>
+                                   <?php if ($this->options->TextDisplay == 'text') { ?>
+                                       <p><?php $this->excerpt(250, '......');?><p>
+                                   <?php } else { ?>
+                                        <?php $this->content('继续阅读'); ?>
+                                   <?php } ?> 
                             </div>
                             <?php endif; ?>
             </article>

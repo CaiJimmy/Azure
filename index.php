@@ -4,7 +4,7 @@
  * 
  * @package Azure
  * @author Jimmy
- * @version 1.6
+ * @version 2.0
  * @link http://jimmycai.org
  */
  
@@ -44,7 +44,11 @@
                                     </p>
                                 </header>
                                 <div class="post-content">
-                                        <?php $this->content(); ?>
+                                  <?php if ($this->options->TextDisplay == 'text') { ?>
+                                       <?php $this->excerpt(250, '......');?>
+                                   <?php } else { ?>
+                                        <?php $this->content('继续阅读'); ?>
+                                   <?php } ?> 
                                 </div>
                                 <?php endif; ?>
                     </article>
