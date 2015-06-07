@@ -9,7 +9,7 @@
             Typecho
         </a>
         强力驱动 | Theme By
-        <a href="http://nichijou.org" target="_blank">
+        <a href="http://jimmycai.org" target="_blank">
             Jimmy
         </a>
 </blockquote>
