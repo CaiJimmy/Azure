@@ -6,8 +6,7 @@
 
 - 自适应
 - 简洁快速
-- ...
 
-更多介绍请查看<a href="http://jimmycai.org/Azure.html">发布页面</a>
+Powered by http://purecss.io/layouts/blog/
 
 GNU GENERAL PUBLIC LICENSE
